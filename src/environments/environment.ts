@@ -1,16 +1,18 @@
-// This file can be replaced during build by using the `fileReplacements` array.
-// `ng build` replaces `environment.ts` with `environment.prod.ts`.
-// The list of file replacements can be found in `angular.json`.
-
 export const environment = {
   production: false
 };
-
-/*
- * For easier debugging in development mode, you can import the following file
- * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
- *
- * This import should be commented out in production mode because it will have a negative impact
- * on performance if an error is thrown.
- */
-// import 'zone.js/plugins/zone-error';  // Included with Angular CLI.
+export const SpotifyConfiguration = {
+  clientId: '9d170f0120fb423581ac554646ee9a45',
+  autEndpoint: 'https://accounts.spotify.com/authorize',
+  redirectUrl: 'http:/localhost:4200/login/',
+  /* permissões vindas do spot */
+  scopes: [
+    "user-read-currently-playing",
+    "user-read-recently-played",
+    "user-top-read",
+    "user-modify-playback-state",
+    "user-library-read",
+    "playlist-read-private",
+    "playlist-read-colaborative"
+  ]
+}
